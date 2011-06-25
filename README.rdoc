@@ -20,7 +20,7 @@ Create initializer, for example config/initializers/translator.rb:
 Create Gemfile and run "bundle":
 
     gem 'redis'
-    gem 'translator', :git => "git://github.com/amberbit/translator.git"
+    gem 'translator', :git => "git://github.com/redrick/translator.git"
 
 Create initializer, for example config/initializers/translator.rb:
 
