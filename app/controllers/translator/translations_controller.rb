@@ -6,9 +6,9 @@ module Translator
       @all_keys = Translator.keys_for_strings(:show => params[:show]).collect {|k| k.sub(/\.[a-z0-9\-_]*$/, "")}.uniq
       @keys = Translator.keys_for_strings(:show => params[:show], :filter => params[:key])
       if params[:search]
-        @keys = @keys.select {|k|
+        @keys = @keys.select do |k|
           Translator.locales.any? {|locale| I18n.translate("#{k}", :locale => locale).to_s.downcase.include?(params[:search].downcase)}
-        }
+        end
       end
       @keys = paginate(@keys)
       render :layout => Translator.layout_name
@@ -16,7 +16,10 @@ module Translator
 
     def create
       Translator.current_store[params[:key]] = params[:value]
-      redirect_to :back unless request.xhr?
+      redirect_to translations_path unless request.xhr?
+    end
+    
+    def new
     end
 
     private

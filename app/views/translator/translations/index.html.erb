@@ -15,9 +15,7 @@
       <%= submit_tag "Search" %>
     <% end %>
   </div>
-  
-  <!-- changed the location of div tag because of crossing-->
- <div>
+
   <% @keys.each do |key| %>
     <%= key %>
     <% Translator.locales.each do |locale| %>
