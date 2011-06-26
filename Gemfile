@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 gem "rails", "3.0.5"
-gem "mongo", "1.1"
+#gem "mongo", "1.1"
 gem "bson_ext", ">=1.0.5"
 gem "redis"
 gem "jquery-rails"

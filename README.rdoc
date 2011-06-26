@@ -2,18 +2,7 @@
 
 == Installation
 
-=== For MongoDB:
-
-Create Gemfile and run "bundle":
-
-    gem 'mongo'
-    gem 'bson_ext'
-    gem 'translator', :git => "git://github.com/amberbit/translator.git"
-
-Create initializer, for example config/initializers/translator.rb:
-    conn = Mongo::Connection.new.db("translator_test").collection("translations")
-    Translator.current_store = Translator::MongoStore.new(conn)
-    I18n.backend = Translator.setup_backend(I18n::Backend::Simple.new)
+== sry for cutting out the mongo, but I need it just for Redis, so I will try to make it work as I want just there...
 
 === For Redis:
 
