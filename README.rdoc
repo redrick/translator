@@ -2,19 +2,23 @@
 
 == Installation
 
-== sry for cutting out the mongo, but I need it just for Redis, so I will try to make it work as I want just there...
-
-=== For Redis:
+=== For Redis and Rails 3.0:
 
 Create Gemfile and run "bundle":
 
     gem 'redis'
     gem 'translator', :git => "git://github.com/redrick/translator.git"
+    gem 'jquery-rails'
 
+Install jquery plugin (see http://github.com/rails/jquery-rails).
 Create initializer, for example config/initializers/translator.rb:
 
     Translator.current_store = Translator::RedisStore.new(Redis.new)
     I18n.backend = Translator.setup_backend(I18n::Backend::Simple.new)
+
+Add this line to your config/application.rb to recursive search locales in all "config/locales/*" subdirectories.
+    
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s] 
 
 == Usage
 
