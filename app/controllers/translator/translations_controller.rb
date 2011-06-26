@@ -20,6 +20,7 @@ module Translator
     end
     
     def new
+      render :layout => Translator.layout_name
     end
 
     private
