@@ -16,7 +16,7 @@ module Translator
 
     def create
       Translator.current_store[params[:key]] = params[:value]
-      redirect_to translations_path unless request.xhr?
+      redirect_to translations_path(:search => params[:value]) unless request.xhr?
     end
     
     def new
