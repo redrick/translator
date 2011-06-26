@@ -10,9 +10,9 @@
     <p>Add new key and value for default language.</p>
   <%= form_tag translations_path, :class => "translate", :method => "post" do %>
     <%= label_tag(:key, "Key") %><br>
-    <%= text_field_tag :key, "en." %>
-    <%= label_tag(:value, "Default value") %><br>
-    <%= text_field_tag :value %>
+    <%= text_field_tag :key, "en." %><br>
+    <%= label_tag(:value, "Value") %><br>
+    <%= text_field_tag :value %><br>
     <%= submit_tag "Add" %>
   <% end %>
   </div>
