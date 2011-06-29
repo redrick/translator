@@ -1,5 +1,5 @@
 <div id='translations'>
-  <h1><%= link_to_unless_current "Translations", translations_path(:show => "all") %></h1>
+  <h1>Translations</h1>
   <ul>
     <li><%= link_to_unless_current "Application Translations", translations_path(:show => "application") %></li>
     <li><%= link_to_unless_current "Framework Translations", translations_path(:show => "framework") %></li>
@@ -16,22 +16,25 @@
     <% end %>
   </div>
 
-  <%= submit_tag "Save all", :type => 'button', :id => 'save_all_button' %>
-
+  <%= submit_tag "Save all", "data-disable-with" => "Saving...", :type => 'button', :class => 'save_all_button' %>
+       <br />
   <% @keys.each do |key| %>
     <%= key %>
+    <% #submit_tag "Delete", "data-disable-with" => "Deleting...", "data-key" => key, :id => "deletion_button", :method=>'destroy' %>
+    <% #link_to "remove", translations_path, :key => key %>
     <% Translator.locales.each do |locale| %>
       <%= render :partial => "form", :locals => {:locale => locale, :key => key} %>
     <% end %>
   <% end %>
 
+  <%= submit_tag "Save all", "data-disable-with" => "Saving...", :type => 'button', :class => 'save_all_button' %>
+     <br />
   <% unless @total_pages < 2 %>
     <% (1..@total_pages).each do |p| %>
       <%= link_to_unless_current p, translations_path(:show => params[:show], :page => p) %>
     <% end %>
   <% end %>
 
-  <%= submit_tag "Save all", :type => 'button', :id => 'save_all_button' %>
 </div>
 
 <div id="footer">
@@ -42,9 +45,21 @@
     event.preventDefault();
     $("input[type='text']", $(this).parents("form")).val($(this).attr("data-recover"));
   });
-  $('#save_all_button').live("click", function(save) {
+
+  $('.save_all_button').live("click", function(event) {
     event.preventDefault();
-    $("input[type='submit'][name='commit']").click();
+    $("input[type='submit'][name='commit']").each(function() {
+        if ($("input[type='text']", $(this).parents("form")).val() != "") {
+            $(this).click();
+        }
+    });
   });
+//
+//  $('#deletion_button').live("click", function(event) {
+//    event.preventDefault();
+//    key = $(this).attr("data-key");
+//    // alert(key);
+//    Translator.destroy(@key);
+//  });
 </script>
 

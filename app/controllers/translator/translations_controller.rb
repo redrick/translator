@@ -23,6 +23,12 @@ module Translator
       render :layout => Translator.layout_name
     end
 
+#    def destroy
+#      Translator.locales.each do |locale|
+#        Translator.current_store.del(locale+"."+params[:key])
+#      end
+#    end
+
     private
 
     def auth
