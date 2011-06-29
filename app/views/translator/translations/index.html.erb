@@ -40,8 +40,8 @@
     event.preventDefault();
     $("input[type='text']", $(this).parents("form")).val($(this).attr("data-recover"));
   });
-  $('#save_all_button') {
+  $('#save_all_button').live("click", function(save) {
     $("input[type='submit'][name='commit']").click();
-  }
+  });
 </script>
 

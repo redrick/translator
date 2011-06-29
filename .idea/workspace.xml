@@ -29,7 +29,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/translator/translations/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="75" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.8469945">
+            <state line="44" column="5" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.87431693">
               <folding />
             </state>
           </provider>
@@ -297,7 +297,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/translator/translations/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="75" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.8469945">
+        <state line="44" column="5" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.87431693">
           <folding />
         </state>
       </provider>
