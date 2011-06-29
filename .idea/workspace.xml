@@ -26,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/translator/translations/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="110" selection-start="1406" selection-end="1406" vertical-scroll-proportion="-5.8163266">
+            <state line="43" column="75" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.8469945">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/translator/translations/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="0.24590164">
+            <state line="9" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="-2.7551022">
               <folding />
             </state>
           </provider>
@@ -288,16 +288,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/translator/translations/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/translator/translations/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="110" selection-start="1406" selection-end="1406" vertical-scroll-proportion="-5.8163266">
+        <state line="9" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="-2.7551022">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/translator/translations/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/translator/translations/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="587" selection-end="587" vertical-scroll-proportion="0.24590164">
+        <state line="43" column="75" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.8469945">
           <folding />
         </state>
       </provider>
