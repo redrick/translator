@@ -28,6 +28,8 @@
       <%= link_to_unless_current p, translations_path(:show => params[:show], :page => p) %>
     <% end %>
   <% end %>
+
+  <%= submit_tag "Save all", :type => 'button', :id => 'save_all_button' %>
 </div>
 
 <div id="footer">
