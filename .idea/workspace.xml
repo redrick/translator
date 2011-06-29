@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11dec2e2-04e4-44d7-92a7-e78bb4eff4f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/translator/translations/index.html.erb" afterPath="$PROJECT_DIR$/app/views/translator/translations/index.html.erb" />
     </list>
     <ignored path="translator.iws" />
@@ -30,7 +29,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/translator/translations/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="132" selection-start="518" selection-end="518" vertical-scroll-proportion="0.24590164">
+            <state line="1" column="82" selection-start="106" selection-end="106" vertical-scroll-proportion="0.027322404">
               <folding />
             </state>
           </provider>
@@ -292,7 +291,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/translator/translations/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="132" selection-start="518" selection-end="518" vertical-scroll-proportion="0.24590164">
+        <state line="1" column="82" selection-start="106" selection-end="106" vertical-scroll-proportion="0.027322404">
           <folding />
         </state>
       </provider>
