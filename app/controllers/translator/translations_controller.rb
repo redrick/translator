@@ -32,8 +32,8 @@ module Translator
     def paginate(collection)
       @page = params[:page].to_i
       @page = 1 if @page == 0
-      @total_pages = (collection.count / 50.0).ceil
-      collection[(@page-1)*50..@page*50]
+      @total_pages = (collection.count / 10.0).ceil
+      collection[(@page-1)*10..@page*10]
     end
   end
 end
