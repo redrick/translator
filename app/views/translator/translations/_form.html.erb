@@ -3,8 +3,8 @@
 
   <span class='locale'><%= locale %>: </span>
   <%= text_field_tag :value, val = (begin I18n.backend.translate locale, key; rescue; end) %>
-  <%= submit_tag "Save", "data-disable-with" => "Saving..." %>
+  <%= submit_tag I18n.translate('translator.save'), "data-disable-with" => I18n.translate('translator.saving') %>
   <% if (default_val = (begin Translator.simple_backend.translate locale, key; rescue; end;)) != val %>
-    <%= link_to "Default", '#', "data-recover" => default_val || "" %>
+    <%= link_to I18n.translate('translator.default'), '#', "data-recover" => default_val || "" %>
   <% end %>
 <% end %>
