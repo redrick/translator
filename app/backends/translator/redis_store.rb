@@ -20,6 +20,10 @@ module Translator
     def clear_database
       @redis.keys.clone.each {|key| @redis.del key }
     end
+
+    def del(key)
+      @redis.del key
+    end
   end
 end
 
