@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="11dec2e2-04e4-44d7-92a7-e78bb4eff4f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/translator.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/translator.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/cs.yml" afterPath="$PROJECT_DIR$/config/locales/cs.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
     </list>
     <ignored path="translator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/translator/translations/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="46" selection-start="2133" selection-end="2133" vertical-scroll-proportion="0.22651933">
+            <state line="20" column="126" selection-start="1210" selection-end="1260" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
@@ -64,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="translator.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="translator.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/translator.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="83" selection-start="2358" selection-end="2358" vertical-scroll-proportion="-13.166667">
+            <state line="186" column="30" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.73021585">
               <folding />
             </state>
           </provider>
@@ -488,16 +486,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/translator.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/translator/translations/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="83" selection-start="2358" selection-end="2358" vertical-scroll-proportion="-13.166667">
+        <state line="20" column="126" selection-start="1210" selection-end="1260" vertical-scroll-proportion="-5.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/translator/translations/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/translator.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="46" selection-start="2133" selection-end="2133" vertical-scroll-proportion="0.22651933">
+        <state line="186" column="30" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.73021585">
           <folding />
         </state>
       </provider>
