@@ -2,7 +2,7 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
-    <title>Translation Admin</title>
+    <title><%= I18n.translate('translator.translation_admin') %></title>
     <%= csrf_meta_tag %>
     <%= javascript_include_tag "jquery", "jquery_ujs" %>
     <style type='text/css'>
@@ -176,6 +176,13 @@ body { padding-top: 20px; padding-bottom: 20px}
     </style>
   </head>
   <body>
+  <%= form_tag translations_url(:locale=>false), :class => 'locale', :method=>'get' do %>
+    <%=  select_tag "locale", options_for_select(LANGUAGES, I18n.locale.to_s),
+          :onchange => 'this.form.submit()'%>
+    <%= javascript_tag "$('form.locale input').hide()" %>
+  <% end %>
+
+
     <%= yield %>
   </body>
 </html>
