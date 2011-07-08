@@ -15,6 +15,16 @@ Create initializer, for example config/initializers/translator.rb:
 
     Translator.current_store = Translator::RedisStore.new(Redis.new)
     I18n.backend = Translator.setup_backend(I18n::Backend::Simple.new)
+    
+    LANGUAGES = [
+      ["English",             'en'],
+      ["Čeština",             'cs'],
+      ["Slovenština",         'sk'],
+      ['Deutsch',             'de'],
+      ['Polština',            'pl'],
+    ]
+
+    LANGUAGES_STR = {:en => 'English', :cs => 'Čeština', :sk => 'Slovenština', :de => "Deutsch", :pl => 'Polština'}
 
 Add this line to your config/application.rb to recursive search locales in all "config/locales/*" subdirectories.
     
