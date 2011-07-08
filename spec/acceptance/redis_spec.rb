@@ -9,8 +9,10 @@ feature "Translations management with Redis", %q{
 } do
 
   background do
-    Translator.current_store = Translator::RedisStore.new(Redis.new)
-    I18n.backend = Translator.setup_backend(I18n::Backend::Simple.new)
+    REDIS ||= Redis.new(:db => "development")
+    Translator.current_store = Translator::RedisStore.new(REDIS)
+    I18n.locale = :cs
+    I18n.backend = Translator.setup_backend(I18n.backend)
     Translator.current_store.clear_database
     visit translations_path
   end
