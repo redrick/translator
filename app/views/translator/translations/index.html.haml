@@ -11,7 +11,7 @@
       = label_tag :key, I18n.translate('translator.filter')
       = text_field_tag :search, params[:search], :placeholder => I18n.translate('translator.search_for_text')
       = select_tag :key, options_for_select(@sections.collect {|k| [k.humanize, k]}.unshift(["All sections", nil]), params[:key])
-      = submit_tag I18n.translate('translator.search'), :name => nil, :class => 'search_button' 
+      = submit_tag I18n.translate('translator.search'), :name => nil, :class => 'button' 
 
   - unless @total_pages < 2 
     - (1..@total_pages).each do |p|
