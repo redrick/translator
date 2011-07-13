@@ -1,9 +1,9 @@
 #translations
   %h1= I18n.translate('translator.add_new_translation')
   %ul
-    %li= link_to_unless_current I18n.translate('translator.app_translations'), translations_path(:show => "application")
-    %li= link_to_unless_current I18n.translate('translator.framework_translations'), translations_path(:show => "framework")
-    %li= link_to_unless_current I18n.translate('translator.all_translations'), translations_path(:show => "all")
+    %li= link_to_unless_current I18n.translate('translator.app_translations'), translations_path(:show => "application"), :class => 'button'
+    %li= link_to_unless_current I18n.translate('translator.framework_translations'), translations_path(:show => "framework"), :class => 'button'
+    %li= link_to_unless_current I18n.translate('translator.all_translations'), translations_path(:show => "all"), :class => 'button'
   
   %div
     %p= I18n.translate('translator.add_key_value_translation')
