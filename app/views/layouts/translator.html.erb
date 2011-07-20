@@ -234,7 +234,7 @@ input.button {
   <%= form_tag translations_url(:locale => false, :key => params[:key], :search => params[:search]), :class => 'locale', :method=>'get' do %>
   <%= hidden_field_tag :key, params[:key] %>
   <%= hidden_field_tag :search, params[:search] %>
-    <%=  select_tag "locale", options_for_select(LANGUAGES, I18n.locale.to_s),
+    <%=  select_tag "set_locale", options_for_select(LANGUAGES, I18n.locale.to_s),
           :onchange => 'this.form.submit()' %>
     <%= javascript_tag "$('form.locale input').hide()" %>
   <% end %>
