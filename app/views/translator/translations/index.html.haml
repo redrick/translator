@@ -1,6 +1,7 @@
 #translations
   %h1= I18n.translate('translator.translations')
   %ul
+    %li= link_to_unless_current I18n.translate('translator.administration'), admin_root_path, :class => 'button'
     %li= link_to_unless_current I18n.translate('translator.app_translations'), translations_path(:show => "application"), :class => 'button'
     %li= link_to_unless_current I18n.translate('translator.framework_translations'), translations_path(:show => "framework"), :class => 'button'
     %li= link_to_unless_current I18n.translate('translator.all_translations'), translations_path(:show => "all"), :class => 'button'

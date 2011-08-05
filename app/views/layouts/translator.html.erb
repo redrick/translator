@@ -4,7 +4,7 @@
   <head>
     <title><%= I18n.translate('translator.translation_admin') %></title>
     <%= csrf_meta_tag %>
-    <%= javascript_include_tag "jquery", "jquery_ujs" %>
+    <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js", "vendor/jquery_ujs" %>
     <style type='text/css'>
 html{
 	color:#000;
@@ -13,11 +13,11 @@ html{
 body,
 div,
 dl,
-dt,
+dt,j
 dd,
 ul,
 ol,
-li,
+li,jj
 h1,
 h2,
 h3,
@@ -38,7 +38,7 @@ td {
 	margin:0;
 	padding:0;
 }
-table {
+table {j
 	border-collapse:collapse;
 	border-spacing:0;
 }
@@ -231,13 +231,13 @@ input.button {
     </style>
   </head>
   <body>
-  <%= form_tag translations_url(:locale => false, :key => params[:key], :search => params[:search]), :class => 'locale', :method=>'get' do %>
-  <%= hidden_field_tag :key, params[:key] %>
-  <%= hidden_field_tag :search, params[:search] %>
-    <%=  select_tag "set_locale", options_for_select(LANGUAGES, I18n.locale.to_s),
-          :onchange => 'this.form.submit()' %>
-    <%= javascript_tag "$('form.locale input').hide()" %>
-  <% end %>
+  <%# form_tag translations_url(:locale => false, :key => params[:key], :search => params[:search]), :class => 'locale', :method=>'get' do %>
+  <%# hidden_field_tag :key, params[:key] %>
+  <%# hidden_field_tag :search, params[:search] %>
+    <%#  select_tag "set_locale", options_for_select(LANGUAGES, I18n.locale.to_s),
+      #  :onchange => 'this.form.submit()' %>
+   <%# javascript_tag "$('form.locale input').hide()" %>
+  <%# end %>
 
 
     <%= yield %>

@@ -20,3 +20,4 @@ cs:
     translation_admin: "Administrace překladú"
     add_key_value_translation: "Přidat nový klíč a hodnotu pro výchozí jazyk."
     nothing_found: "Nic nenalezeno"
+    administration: "zpět na administraci"
