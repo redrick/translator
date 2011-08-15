@@ -3,6 +3,7 @@ module Translator
     before_filter :auth
 
     def index
+      I18n.locale = :cs
       section = params[:key].present? && params[:key] + '.'
       @sections = Translator.keys_for_strings(:show => params[:show])
       .map {|k| k = k.scan(/^[a-z0-9\-_]*\./)[0]; k ? k.gsub('.', '') : false}.select{|k| k}.uniq.sort
