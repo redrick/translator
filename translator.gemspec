@@ -1,10 +1,10 @@
-# -*- encoding: utf-8 -*-
+# encoding: utf-8
 
 Gem::Specification.new do |s|
   s.name        = "translator"
   s.version     = "0.0.1"
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Hubert Łępicki"]
+  s.authors     = ["Hubert Lepicki", "Andrej Antas"]
   s.email       = ["hubert.lepicki@amberbit.com"]
   s.homepage    = "http://github.com/amberbit/translator"
   s.summary     = "Rails engine to manage translations"
