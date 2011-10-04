@@ -36,9 +36,9 @@
           - parts[0] = link_to(parts[0], translations_path(:show => params[:show], :key => parts[0].underscore), :title => "Go to secion" + parts[0])
         = parts.join(' > ').html_safe
         = link_to  I18n.translate('translator.delete'), translation_path(:id => 0, :key => key), :method => 'delete'
-    - Translator.locales.each do |locale|
-      = form_tag translations_path, :id => "#{locale}.#{key}".gsub('.', '-'), :class => "translate", :remote => true, :method => "post" do
-        = render :partial => "form", :locals => {:locale => locale, :key => key}
+    - LANGUAGES.each do |locale|
+      = form_tag translations_path, :id => "#{locale.last}.#{key}".gsub('.', '-'), :class => "translate", :remote => true, :method => "post" do
+        = render :partial => "form", :locals => {:locale => locale.last.to_sym, :key => key}
 
   - unless @keys.length < 1
     = submit_tag I18n.translate('translator.save_all'), "data-disable-with" => I18n.translate('translator.saving'), :type => 'button', :class => ['save-all-button', 'button']
