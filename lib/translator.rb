@@ -80,7 +80,7 @@ module Translator
   private
 
   def self.flatten_keys(current_key, hash, dest_hash)
-    hash.each do |key, value|
+    hash.try(each) do |key, value|
       full_key = [current_key, key].compact.join('.')
       if value.kind_of?(Hash)
         flatten_keys full_key, value, dest_hash
